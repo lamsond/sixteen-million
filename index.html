@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Sixteen Million Colors...</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Open Sans';
+        }
+        #bg{
+            
+        }
+        #fg{
+            font-family: 'Open Sans';
+            text-align: center;
+        }
+        div{
+            width: 200px;
+            font-size: 24px;
+            margin: auto;
+        }
+        button{
+            margin: 25px 50px 0px 50px;
+            width: 100px;
+            background-color: #888888;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            font-size: 24px;
+        }
+        th{
+            text-align: right;
+        }
+        td{
+            text-align: center;
+        }
+        th, td{
+            width: 100px;
+        }
+    </style>
+    
+  </head>
+  <body id="bg">
+    <h1 id="fg">Want to see all 16 Million Possible RGB Colors?</h1>
+    <div id="comps">
+      <table>
+        <tr>
+          <th>Red: </th>
+          <td id="red_qty"></td>
+        </tr>
+        <tr>
+          <th>Green: </th>
+          <td id="green_qty"></td>
+        </tr>
+        <tr>
+          <th>Blue: </th>
+          <td id="blue_qty"></td>
+        </tr>
+      </table>
+    <button onclick="roll();">Go!</button>
+    </div>
+    <script src='sixteen-million.js'></script>
+  </body>
+</html>
+
